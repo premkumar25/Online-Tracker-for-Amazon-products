@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import smtplib      #used to send email
-
+import time       #used to get time details
 
 #copy the url of the item which you want to search
 URL = 'https://www.amazon.in/gp/product/B07KY3K2YG/' \
@@ -64,3 +64,10 @@ def send_mail():
 #Calling the function
 check_price()
 
+'''
+#Creating a while function to check the product repeatively for particular amount of time
+while(True):
+    #Calling the function
+    check_price()
+    time.sleep(3600)     #time in seconds (Here it checks for each hour i.e., 3600 seconds)
+'''
