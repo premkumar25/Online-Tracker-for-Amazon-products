@@ -65,7 +65,7 @@ def send_mail():
 check_price()
 
 '''
-#Creating a while function to check the product repeatively for particular amount of time
+#Creating a while function to check the product repetitively for particular amount of time
 while(True):
     #Calling the function
     check_price()
